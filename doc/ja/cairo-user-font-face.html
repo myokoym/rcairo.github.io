@@ -171,19 +171,19 @@ end</pre>
 が要求するような複雑な形を実現できます。</p>
 <p>変換した結果は<var>data</var>に設定します。</p>
 <p>もし、
-<a href="cairo-user-font-face-text-to-glyphs-data.html">data.need_glyphs?</a>
+<a href="cairo-user-font-face-text-to-glyphs-data.html#label-13">data.need_glyphs?</a>
 が<code>true</code>の場合は
-<a href="cairo-user-font-face-text-to-glyphs-data.html">data.glyphs=</a>
+<a href="cairo-user-font-face-text-to-glyphs-data.html#label-12">data.glyphs=</a>
 で計算したグリフのインデックスと位置を設定します。グリ
 フの位置はフォント空間座標です。テキストは起点から表示
 されると仮定しています。</p>
 <p>もし、
-<a href="cairo-user-font-face-text-to-glyphs-data.html">data.need_clusters?</a>
+<a href="cairo-user-font-face-text-to-glyphs-data.html#label-10">data.need_clusters?</a>
 が<code>true</code>の場合は
-<a href="cairo-user-font-face-text-to-glyphs-data.html">data.clusters=</a>
+<a href="cairo-user-font-face-text-to-glyphs-data.html#label-9">data.clusters=</a>
 で計算したクラスタ対応情報を設定します。</p>
 <p>もし、このコールバックが省略されているか
-<a href="cairo-user-font-face-text-to-glyphs-data.html">data.glyphs</a>
+<a href="cairo-user-font-face-text-to-glyphs-data.html#label-11">data.glyphs</a>
 が<code>nil</code>の場合は
 <a href="cairo-user-font-face.html">Cairo::UserFontFace#on_unicode_to_</a>glyphが呼ばれます。</p>
 <p>注: cairoはグリフのインデックス付けには制限を設けていま
@@ -250,7 +250,7 @@ on_text_to_glyphsほど出力を制御できませんが、使いやすい
 <h2><a name="label-9" id="label-9">参考</a></h2><!-- RDLabel: "参考" -->
 <ul>
 <li><a href="cairo-context.html#label-137">Cairo::Context#show_text_glyphs</a></li>
-<li><a href="cairo-scaled-font.html">Cairo::ScaledFont#text_to_glyphs</a></li>
+<li><a href="cairo-scaled-font.html#label-13">Cairo::ScaledFont#text_to_glyphs</a></li>
 </ul>
 <h2><a name="label-10" id="label-10">変更履歴</a></h2><!-- RDLabel: "変更履歴" -->
 <ul>

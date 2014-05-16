@@ -20,7 +20,7 @@
 <p><a href="cairo.html">Cairo</a>::Contextはrcairoで描画するときに使用する主要なオブジェ
 クトです。rcairoで描画するためには、まず、描画対象となるサー
 フェスを設定したCairo::Contextを作ります。それから、描画オプ
-ションを設定し、<a href="cairo-context.html">Cairo::Context#move_to</a>、
+ションを設定し、<a href="cairo-context.html#label-76">Cairo::Context#move_to</a>、
 <a href="cairo-context.html">Cairo::Context#line_</a>toなどで形を作り、その形を
 <a href="cairo-context.html">Cairo::Context#</a>strokeかCairo::Context#fillで描画
 します。</p>
@@ -303,16 +303,16 @@ context.clip(true) { ... }</pre></dd>
 ドがどのように現在の点に影響を与えるかの詳細は以下を見
 てください。</p>
 <ul>
-<li><a href="cairo-context.html">Cairo::Context#new_path</a></li>
-<li><a href="cairo-context.html">Cairo::Context#move_to</a></li>
-<li><a href="cairo-context.html">Cairo::Context#line_to</a></li>
-<li><a href="cairo-context.html">Cairo::Context#curve_to</a></li>
-<li><a href="cairo-context.html">Cairo::Context#arc</a></li>
-<li><a href="cairo-context.html">Cairo::Context#rel_move_to</a></li>
-<li><a href="cairo-context.html">Cairo::Context#rel_line_to</a></li>
-<li><a href="cairo-context.html">Cairo::Context#rel_curve_to</a></li>
+<li><a href="cairo-context.html#label-77">Cairo::Context#new_path</a></li>
+<li><a href="cairo-context.html#label-76">Cairo::Context#move_to</a></li>
+<li><a href="cairo-context.html#label-64">Cairo::Context#line_to</a></li>
+<li><a href="cairo-context.html#label-25">Cairo::Context#curve_to</a></li>
+<li><a href="cairo-context.html#label-11">Cairo::Context#arc</a></li>
+<li><a href="cairo-context.html#label-92">Cairo::Context#rel_move_to</a></li>
+<li><a href="cairo-context.html#label-91">Cairo::Context#rel_line_to</a></li>
+<li><a href="cairo-context.html#label-90">Cairo::Context#rel_curve_to</a></li>
 <li><a href="cairo-context.html">Cairo::Context#rel_arc</a></li>
-<li><a href="cairo-context.html">Cairo::Context#text_path</a></li>
+<li><a href="cairo-context.html#label-119">Cairo::Context#text_path</a></li>
 </ul>
 <ul>
 <li>戻り値: <code>[x, y]</code>:
@@ -416,8 +416,8 @@ context.fill</pre>
 域は関係ありません。</p>
 <p>以下も見てください。</p>
 <ul>
-<li><a href="cairo-context.html">Cairo::Context#fill</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_fill_rule</a></li>
+<li><a href="cairo-context.html#label-30">Cairo::Context#fill</a></li>
+<li><a href="cairo-context.html#label-37">Cairo::Context#set_fill_rule</a></li>
 </ul>
 <ul>
 <li>戻り値: <code>[x1, y1, x2, y2]</code>:
@@ -593,9 +593,9 @@ extents.height）に貢献しないことに注意してください。</p>
 してください。</p>
 <p>以下のメソッドも見てください。</p>
 <ul>
-<li><a href="cairo-context.html">Cairo::Context#fill</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_fill_rule</a></li>
-<li><a href="cairo-context.html">Cairo::Context#fill_preserve</a></li>
+<li><a href="cairo-context.html#label-30">Cairo::Context#fill</a></li>
+<li><a href="cairo-context.html#label-37">Cairo::Context#set_fill_rule</a></li>
+<li><a href="cairo-context.html#label-33">Cairo::Context#fill_preserve</a></li>
 </ul>
 <ul>
 <li>x: テストする点のX座標</li>
@@ -615,12 +615,12 @@ extents.height）に貢献しないことに注意してください。</p>
 してください。</p>
 <p>以下のメソッドも見てください。</p>
 <ul>
-<li><a href="cairo-context.html">Cairo::Context#stroke</a></li>
+<li><a href="cairo-context.html#label-112">Cairo::Context#stroke</a></li>
 <li><a href="cairo-context.html">Cairo::Context#set_line_with</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_line_join</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_line_cap</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_dash</a></li>
-<li><a href="cairo-context.html">Cairo::Context#stroke_preserve</a></li>
+<li><a href="cairo-context.html#label-63">Cairo::Context#set_line_join</a></li>
+<li><a href="cairo-context.html#label-60">Cairo::Context#set_line_cap</a></li>
+<li><a href="cairo-context.html#label-103">Cairo::Context#set_dash</a></li>
+<li><a href="cairo-context.html#label-115">Cairo::Context#stroke_preserve</a></li>
 </ul>
 <ul>
 <li>x: テストする点のX座標</li>
@@ -644,7 +644,7 @@ extents.height）に貢献しないことに注意してください。</p>
 <a href="cairo.html">Cairo</a>::LineCapを見てください。</p>
 <p>他の描きパラメータと同じように、現在のラインキャップスタ
 イルはCairo::Context#stroke,
-<a href="cairo-context.html">Cairo::Context#stroke_extents</a>
+<a href="cairo-context.html#label-114">Cairo::Context#stroke_extents</a>
 で参照されますが、パスを作っているときはまったく影響を
 与えません。</p>
 <ul>
@@ -669,8 +669,8 @@ extents.height）に貢献しないことに注意してください。</p>
 ように結合点スタイルが描画されるかは
 <a href="cairo.html">Cairo</a>::LineJoinを見てください。</p>
 <p>他の描きパラメータと同じように、現在の結合点スタイルは
-<a href="cairo-context.html">Cairo::Context#stroke</a>,
-<a href="cairo-context.html">Cairo::Context#stroke_extents</a>
+<a href="cairo-context.html#label-112">Cairo::Context#stroke</a>,
+<a href="cairo-context.html#label-114">Cairo::Context#stroke_extents</a>
 で参照されますが、パスを作っているときはまったく影響を
 与えません。</p>
 <ul>
@@ -718,8 +718,8 @@ extents.height）に貢献しないことに注意してください。</p>
 <a href="cairo-context.html">Cairo::Context#set_line_</a>widthに渡すことができ、この注は
 無視することができます。</p>
 <p>他の描きパラメータと同じように、現在の線幅は
-<a href="cairo-context.html">Cairo::Context#stroke</a>,
-<a href="cairo-context.html">Cairo::Context#stroke_extents</a>
+<a href="cairo-context.html#label-112">Cairo::Context#stroke</a>,
+<a href="cairo-context.html#label-114">Cairo::Context#stroke_extents</a>
 で参照されますが、パスを作っているときはまったく影響を
 与えません。</p>
 <p>デフォルトの線幅は<code>2.0</code>です。</p>
@@ -778,8 +778,8 @@ extents.height）に貢献しないことに注意してください。</p>
 <p>cairoは留め継ぎの長さを線幅で割ります。その結果が留め
 継ぎ限界よりも大きい場合は、斜角スタイルを使います。</p>
 <p>他の描きパラメータと同じように、現在の留め継ぎ限界は
-<a href="cairo-context.html">Cairo::Context#stroke</a>,
-<a href="cairo-context.html">Cairo::Context#stroke_extents</a>
+<a href="cairo-context.html#label-112">Cairo::Context#stroke</a>,
+<a href="cairo-context.html#label-114">Cairo::Context#stroke_extents</a>
 で参照されますが、パスを作っているときはまったく影響を
 与えません。</p>
 <ul>
@@ -1078,7 +1078,7 @@ context.move_to(x + dx, y + dy)</pre>
 処理とテキスト配置ライブラリを使う必要があるでしょう。
 （例えばPango）</p>
 <p><a href="cairo-context.html">Cairo::Context#select_font_</a>faceまたは
-<a href="cairo-context.html">Cairo::Context#font_face=</a>やCairo::Context#scaled_font=
+<a href="cairo-context.html#label-40">Cairo::Context#font_face=</a>やCairo::Context#scaled_font=
 のような関連するフォント選択APIを呼び出さずにテキストを
 描画した場合は、プラットフォーム依存のデフォルトのフォ
 ントファミリーが使われます。これは本質的には
@@ -1224,10 +1224,10 @@ context.move_to(x + dx, y + dy)</pre>
 合は呼び出した後は現在のパスは消去されます。以下も見て
 ください。</p>
 <ul>
-<li><a href="cairo-context.html">Cairo::Context#set_line_width</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_line_join</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_line_cap</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_dash</a></li>
+<li><a href="cairo-context.html#label-67">Cairo::Context#set_line_width</a></li>
+<li><a href="cairo-context.html#label-63">Cairo::Context#set_line_join</a></li>
+<li><a href="cairo-context.html#label-60">Cairo::Context#set_line_cap</a></li>
+<li><a href="cairo-context.html#label-103">Cairo::Context#set_dash</a></li>
 </ul>
 <p>ブロックを指定した場合は、<a href="cairo-context.html">Cairo::Context#new_</a>pathで新し
 いパスをはじめてからブロックを呼び出します。以下のよう
@@ -1274,10 +1274,10 @@ context.stroke</pre>
 <p>以下も見てください。</p>
 <ul>
 <li><a href="cairo-context.html">Cairo::Context#cairo_stroke</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_line_width</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_line_join</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_line_cap</a></li>
-<li><a href="cairo-context.html">Cairo::Context#set_dash</a></li>
+<li><a href="cairo-context.html#label-67">Cairo::Context#set_line_width</a></li>
+<li><a href="cairo-context.html#label-63">Cairo::Context#set_line_join</a></li>
+<li><a href="cairo-context.html#label-60">Cairo::Context#set_line_cap</a></li>
+<li><a href="cairo-context.html#label-103">Cairo::Context#set_dash</a></li>
 </ul>
 <ul>
 <li>戻り値: <code>[x1, y1, x2, y2]</code>:
@@ -1519,7 +1519,7 @@ context.line_to(...)</pre>
 </dl>
 <h2><a name="label-138" id="label-138">参考</a></h2><!-- RDLabel: "参考" -->
 <ul>
-<li><a href="index.html">索引</a></li>
+<li><a href="index.html#label-0">索引</a></li>
 <li><a href="cairo-surface.html">Cairo::Surface</a></li>
 <li><a href="cairo-text-cluster.html">Cairo::TextCluster</a></li>
 </ul>
